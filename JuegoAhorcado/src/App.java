@@ -27,7 +27,7 @@ public class App {
             //usamos un booleano para saber si la letra esta dentro de la palabra
             boolean letraCorrecta = false;
             //pedimos la letra
-            char letra = scanner.next().charAt(0);//asi solo tomamos la primera letyra que escriba el usuario 
+            char letra = Character.toLowerCase(scanner.next().charAt(0));//transformamos la letra a minuscula asi evitamos errores y usamos el charAt(0) para indicar que tome solo la primera letra que escriba el usuario
             //System.out.println(letra);
 
             //recorremos la palabra a ver si esta la letra
